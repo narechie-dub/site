@@ -1,0 +1,119 @@
+{
+  "pages": [
+    {
+      "url": "about",
+      "title": "О группе",
+      "description": "Тут будет описание о группе - кто, что, зачем"
+    },{
+      "url": "songs",
+      "title": "Песни",
+      "description": "Тут будет каталог песен"
+    },{
+      "url": "events",
+      "title": "Концерты",
+      "description": "Тут будут анонсенсы будущих выступлений, да отчётики о прошедших концертиках"
+    },{
+      "url": "talks",
+      "title": "Беседка",
+      "description": "Тут будет флудилка и чятик"
+    },{
+      "url": "contacts",
+      "title": "Контакты",
+      "description": "Тут будут ссылочки на социалочки, контактные емайлушки, райдер4ики, формочка обратной связюшки, и может быть отзывы, как положительные, так и отрицательные"        
+    }
+  ],
+  "songs": [
+    {
+      "id": "во+горнице",
+      "title": "Во горнице",
+      "description": "Плясовая, Белгородская обл., Алексеевский р-н, с. Афанасьевка",
+      "text": "",
+      "coverUrl": "/images/covers/во+горнице(S).png",
+      "songUrl": "https://googledrive.com/host/0BzKbwikCVH-BX0FBZnR5QnZyNWs/s2016e0707t195224 - Во горнице.MP3",
+      "coverPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAMAAAC6sdbXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU0NTg4MEI2NENGOTExRTY4QUZBOEU3QjIwMkREMTJFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU0NTg4MEI3NENGOTExRTY4QUZBOEU3QjIwMkREMTJFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTQ1ODgwQjQ0Q0Y5MTFFNjhBRkE4RTdCMjAyREQxMkUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTQ1ODgwQjU0Q0Y5MTFFNjhBRkE4RTdCMjAyREQxMkUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4KUeTLAAACc1BMVEXDfz1xVyu+eDhqSCe+bDPBm1dXOBHJn1htUSVhRSRQMAqqdjxkTitdOx7VlUOfbjXYi0FHLBO5nV54Wy6VbDhTPB6NZTycdkZlSx7JejZ1Sye6gjSff0qDXyhwRx3FcTjIhEJAJAnBiTmhczuqbzdiQRe1fz/CjynMfD56WCOndjF8UiuIXjWcbT+neEerklvCbiZ+YTOwezTpoEasfUCscCpKJgV3XDjekkOGakWBVzNuTS5ZRB2dZTZgOA7jmkzNikbComKzdj60bzSTbEJ0UzOPZi+AYT9oQSGijFzwpk3RjjvnoTWUfUranEvKjDChcCh1URynaTGKelCZaiyciFSVdj+6iEXChC1pVDTTjkuGaC+YgFOYXyfSg0GFVCWLdEZTMRrRkyCnh1LJjh6UYTVMNhbhmkCNWiy3eC22ZS2rj1K5hyaDaju0l1S/aR3EjUKnlGbTky7LlSzMk0DblEu+kVKxmGPBhx6LcTmvf0r6tzakb0J/TR22lFzTl1OhZSn0rkjSmzjQoGHbkjfw3LRrRBOPgFZbQyvLhTiOWx7KkU60iVLwpzu4nW35sFOCc0uyfyGqaiC7fkbanzHhmyvUnCTcn1jq1ajalSc2GgX1sS/W2s/V28ChfTy2biLmplWVhl+QcS5aLgeaj2bJdCnCm0zDom+aei/EhkruqSzDljfZp2SUc023YhskEAPQ0rVuXD6viEPWgjR4Zj3+wDh4RBDv6trNqV7dpU/bpD2gZxmviC352Kd5aUjjsGSkiUfMqXG/eiP547u3kDH7v12oeiBcTjeqXSC/lmPNoE3txIT84a+rnnHrunamhTGCWRZiforAAAAAJ0lEQVQIHWMojdJgcWaYrOWyMZyhJ4NX0I1htrM5hxzDvAsVK9YDAHggCRjcGv1QAAAAAElFTkSuQmCC",
+      "order": 1
+    }, {
+      "id": "конопелька",
+      "title": "Конопелька",
+      "description": "",
+      "text": "",
+      "coverUrl": "/images/covers/конопелька(S).png",
+      "coverPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAMAAAC6sdbXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAxRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QkQ2OTcyREY1NzExMTFFNjk5MjNFOUYwMzFCNUEwOTgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QkQ2OTcyREU1NzExMTFFNjk5MjNFOUYwMzFCNUEwOTgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSI1MDMxOUI5MTAwOEFCNDJEN0U1M0JFQzk2ODUzQTI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0iNTAzMTlCOTEwMDhBQjQyRDdFNTNCRUM5Njg1M0EyNUIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6xNVMWAAAARVBMVEUAAACVoZIrPCokOyKHmYVJTEhCR0FaY1Zab1dvanBTX1EkQiH/+/+qsaeKl4iYpJZsf2rf5N4KLwV4iHWXo5ZgZl+tqq12/BIdAAAAJklEQVQIHWPg5+NgEmEQFGJgEGDg4WbmYmEQE2ZjZWQQ5eVkYAcAD9kA/n2bdZMAAAAASUVORK5CYII=",
+      "order": 2
+    }, {
+      "id": "а+за+лесом",
+      "title": "А за лесом",
+      "description": "",
+      "text": "",
+      "coverUrl": "/images/covers/а+за+лесом(S).png", 
+      "songUrl": "/media/s2016e0716t105208.MP3",
+      "coverPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAMAAAC6sdbXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkVERURBQTdFNENGOTExRTY5OUJCQTk4QjlCNzRENkQxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkVERURBQTdGNENGOTExRTY5OUJCQTk4QjlCNzRENkQxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RURFREFBN0M0Q0Y5MTFFNjk5QkJBOThCOUI3NEQ2RDEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RURFREFBN0Q0Q0Y5MTFFNjk5QkJBOThCOUI3NEQ2RDEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6SmP5XAAACmlBMVEX9/P5YWhlNTxtfXib77vi5xeRZWSP8+P5UUx798vz96fbi3vL47PVlYyNcYhz38PrIw9ro3exUVBI4OR9oayZjXDpWUy9vZhdcZjTb2/JSTCh1div86u7Y1+6wyeWzwt9VSRVubizEv9TJ0OtibzxZPRLByed4cCFERDHh2Or78OpvZSbPxdRIRiJtaDbOyN5mPBFLSjhJTCs+PSplaRtWXy/89fJlZTBPVCxuch/u4vBwZkX16PBaWTdAPxxLTxBgUx5kXRlicC47Ow1udDS6zOjo4vbw4Np3aUzy5/deNg2poJVgVi+vpZ+nwuDr2tFRUz0zMxb76uHB0etpeD78+vnYy9jezMOgmJJeZyZ0bRRsXj1mZkJ8Z1mcu9r749eCb2B7fzNbZT54dTe5rKGdk4dmZA9pXi52ay5qdinl08psRhbR0+vCtKnO1vJ4cVDTzeJINxHd0d+Yin/Wxr13ajvZ0efx3eg9SBlRMgt5fSSAdlVOWh47ZIRdXA1ROxhJRA07aYyJdmiNhH713M9rcUpgSBq0rK7Sxsrl0N1sWCP34u6QgHLJv8OrudXGurN7fl16jzTx6OWEgCqDalJ/gWh/ehrb0c/j2tbQwLSXjI2knqHq2OOCenWFiXKSgGSMdVt4bGf75Oh3YVFxgT2dlnZye0y8tLqHj0mboEFqX01sgzFDYXpIeJ2Nk4Jyd1qRl0qBcyuSjm+0pY+looB7iUN3RxmmpWGossNtaFo8cZRjcBUsKwqJlTqHhFp+e0I2XnyiqLE6RTtObYlbWkm5m4C8vMqwkXVEXGaqqUSplolcfZ6Tl5qTlF7IgV+jqTShhm1fOx2+dFtRaHbNtJiHhjquaEYtNzC7cklkanfdoIFHVVHGoY1YX2VCbVmSAAAAJ0lEQVQIHWMQXXZGOZjBdCoD+yKG60qzuXQY7io6VbozJDuztS0GAIfLCRB6roOJAAAAAElFTkSuQmCC",
+      "order": 3
+    }, {
+      "id": "стрела",
+      "title": "Стрела",
+      "description": "Песня-стрела. Под такие песни ранней весной водили длинные карагоды (не закольцованный, растянутый хоровод) по всему селу. Стрелы - отголоски языческих ритуалов зазывания весны.",
+      "text": "",     
+      "coverUrl": "/images/covers/стрела(S).png",
+      "coverPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAMAAAC6sdbXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkE0NjcwMUJENENGOTExRTZCMUI4QjdGMTM3RUUyM0Q2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkE0NjcwMUJFNENGOTExRTZCMUI4QjdGMTM3RUUyM0Q2Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTQ2NzAxQkI0Q0Y5MTFFNkIxQjhCN0YxMzdFRTIzRDYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QTQ2NzAxQkM0Q0Y5MTFFNkIxQjhCN0YxMzdFRTIzRDYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4tZp31AAAAQlBMVEVSVl6fp66Vp7Zfc3yTqsJdVTViaHZmZUdsSCD////r8OwTFBZDUF5KRTl1bWJfYl+bdEXCyMdrWD5ccYuNoJZzfpMloTEJAAAAJklEQVQIHWNg5ORiEmVgYGNk4GcQ4hFk5WBgYmHmFmYQEeDlYwcAC/8A6wqpulAAAAAASUVORK5CYII=",
+
+      "order": 4
+    }, {
+      "id": "заинька",
+      "title": "Заинька",
+      "description": "Детская песенка",
+      "text": "",
+      "coverUrl": "/images/covers/заинька(S).png",
+      "coverPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAMAAAC6sdbXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQxQzIwRDk5NENGOTExRTY4OEEzQ0QxNzk1RjEyN0UwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQxQzIwRDlBNENGOTExRTY4OEEzQ0QxNzk1RjEyN0UwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDFDMjBEOTc0Q0Y5MTFFNjg4QTNDRDE3OTVGMTI3RTAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RDFDMjBEOTg0Q0Y5MTFFNjg4QTNDRDE3OTVGMTI3RTAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5UF07UAAAC3FBMVEX+/v/Dqu3KsPLw9/739fzq9P3Y6/v9/vzd7/3j8f340BVzOinvshRdMir05dvu1fmbtTby3/ySqzXnz/faxXLgwV7buFPSuEHYyO756P367eKHoDNdcT/w8vz3vBdnOTDcyX3Su+b++fSlvjfu3dP98lHo1crZvfNxikXcxEjwxBHlzVTNnD7s2F/byPrE0vzJstvR5fy62fx9PSb99OrL2/z98zydb7W9o+V8lkn248+DVpxmfj5UZjfNtmWku0hqNCTBkDD73hbdxLiUZa/VvmrozGm6yfuMX6XixfNPWj/n0L787RxHVy+mfLetv/vFrl7QvHeZsUbqpRp7ky+1gybx3MSXrllDRzq5j8fHrzdPLCleZktoeU3PuPjMpNjozuuHoFbBpM7n2vmUbaOKRSGkdx/y4G7Xvq787dTBpE6VUSeOpkenejdkZV24oC+0hj5vc2KWZhvNtKmZby94TZO7lEeLZpl0hFf35lbQqlOxxzX88Gc3Pi+ERjGfe6jMu7l4cXeJgeSem/JsZG2ywkzaqEWy0fqUj+pZVld/kVzy5+uokSrTvonk0d2vi7iAW4+iXiz58PFNPnysgMRZU27JtMfz3bLSutWmkqLAqrmis/bVwMfcwd3gzoriv+fC4f3s0npxV1z25IJ9gGywmtvXreHhy8iXhJWFWBqppvbDl9OHdLFKSE1uhSexopjDqY9IRGWou1+xnq+Gfojr3eS9y1r53TR+ddvKspvalB5aTJb66L/azNXk0K6LjXiBeZ90WnzZzr92SRhbVIGGYGTBpqXP12C3nIWzaDj0yDKGbIXXqBvWwZ2Pn2udgH6QcXHkzJvIhxScmYy2vOpANHRGPKSFYS5dcilrQ4aJecCtjIvv2ZzjvCpyaU3KrHXF1ECrLA/l2UOym8hyb4zAz+hnTkazsfxUSrS7m2GkjFxuY8upmnP67JrR3uuXXEHJfEl3ZrLAyHC3vNc6fVK8AAAAJklEQVQIHWP43C7MaMpgoFrEzcagXhI4qZxhlhbPtgcMvSH2ausAeroI6659HbEAAAAASUVORK5CYII=",
+      "order": 5
+    }, {
+      "id": "как+пошли+девки",
+      "title": "Как пошли девки",
+      "description": "Песня про девок, которые уже на выдане. В теплое время года: сватались на Красную горку, женились - на Троицу. Последний свадебный сезон в году - Покров (октябрь).",
+      "text": "",
+      "coverUrl": "/images/covers/как+пошли+девки(S).png",
+      "coverPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAMAAAC6sdbXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDOTczNUVBNTRDRjkxMUU2OTExQ0RGRkEyMjBCNkZFOSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDOTczNUVBNjRDRjkxMUU2OTExQ0RGRkEyMjBCNkZFOSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkM5NzM1RUEzNENGOTExRTY5MTFDREZGQTIyMEI2RkU5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkM5NzM1RUE0NENGOTExRTY5MTFDREZGQTIyMEI2RkU5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+cvUeqwAAAEtQTFRFfIw9X1ojfIg+l5N3cXctbHMklJNxgH9Dcn0wn5+IhY5Jc2xCbGkzaXIpXWEcfoQ7eng6n5WEfXdopKGfcYMueHgtgYxDv7mufIY3Zc3G8AAAACZJREFUCB1j4GfhYGJnEOPlE+FikODhZmRgEGXmZGNlEBQWEhcAABBRAS3qJj9TAAAAAElFTkSuQmCC",
+      "order": 6
+    }, {
+      "id": "ребятушки+масленые",
+      "title": "Ребятушки масленые",
+      "description": "Масленичная песня, которая высмеивала парней, за то, что не успели жениться до Великого поста. По поводу последних строчек (про юбку и шубку): считалось нормальным, что парень приходит к невесте и даже \"подсыпает\" у нее дома до свадьбы. Если пара присватанная друг к другу, то пусть себе встречаются и делают что хотят. И никаких заморочек. Свадьбы играли в основном зимой: между Крещением и до начала Великого поста (на масленицу уже не гуляли).",
+      "text": "",
+      "coverUrl": "/images/covers/ребятушки+масленые(S).png",
+      "coverPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAMAAAC6sdbXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCM0RENTc4MjRDRjkxMUU2ODE0M0QyRkJEN0RCQkQxQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCM0RENTc4MzRDRjkxMUU2ODE0M0QyRkJEN0RCQkQxQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkIzREQ1NzgwNENGOTExRTY4MTQzRDJGQkQ3REJCRDFCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkIzREQ1NzgxNENGOTExRTY4MTQzRDJGQkQ3REJCRDFCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+d35G9gAAAEtQTFRFXDk4Wz430drCzP//5v334f//eU0n6q5dx7Vvr1ksk19DsoNFzdvcwmE/eVgvqnFKb1Y2hGA81cRopoBnz7WezMuapWscsqVx1t/d+hMO6wAAACZJREFUCB1j4BAXZWJnEBITYWVm4BaWYOFh4ORi4xNk4OUXYGAEABMgAS36Xe9+AAAAAElFTkSuQmCC",
+      "order": 7
+    }, {
+      "id": "дубравушка",
+      "title": "Дубравушка",
+      "description": "Песня о том как надо слушаться родителей",
+      "text": "",
+      "coverUrl": "/images/covers/дубравушка(S).png",
+      "songUrl": "/media/s2016e0723t115202.MP3",
+      "coverPlaceholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAMAAAC6sdbXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkRDQTdBQzlFNENGOTExRTY5QUVDREJFMEQ4RTE4RkIxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkRDQTdBQzlGNENGOTExRTY5QUVDREJFMEQ4RTE4RkIxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RENBN0FDOUM0Q0Y5MTFFNjlBRUNEQkUwRDhFMThGQjEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RENBN0FDOUQ0Q0Y5MTFFNjlBRUNEQkUwRDhFMThGQjEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5Os8kDAAAC5VBMVEUXEQMeFgogGgQMCAInHw4iGw0dEwMBAQEVDQMQCgI0JgwuIgYZEgkHBAElHwU5KggUJAM+LgwZKgMRHQMeMQQkNgUlFgUKGAJCNBImLwUwKBgfKwc2KxQqIhQwKgQcIwUsGgcYGAM0MAlBVwsvQwcoPQUuOwo9LxYtNQQ4QwsDDwJAPgowIA5ATg00SQk6Ngg1PAYnJgU+SAgREQNJPBgtJw5JNA05UAg/NiFROw9IRglSPB5HXww3Lx49JA9JUQlFKRJYQhVCNQdORRJbRSVINRtSUBH+/v5JPQpkTSVHOyZVYBJdTRNPQiY2HwhbVwtLWRVOaA5USAhPWQlfYhRdTDFmUjNnbA9BRRQpNA5HTxVaaQv+/PVuVStwdRJwgBlTSh5iQxlcdA9xWjhSRjCSqxtlfRBiWBZYWR5PLxV7YjpsaR94hx9caxp3diSDihervSBviRFqYQ83PBXE0SdndR5lXCT9++tpThZ6lRbv6bB4ahaGohj279V9fBCMflDy6siHlSahkWaVmxp4Xymqm3GAdjlyWRt4bDKGaj2euyTY1C6EfCGzyCb69OSerCmusCGViVeIckzh3KdmWT6toX65rXmwuzWdshvTySeToSzSw5PCtoa7uibq4r6KlRR8aEmRhx3k3YPq27H++tpwY0fCxR+iohzs5Z9bNxe8yjTM0jyKgEBYWDRBRSmYikaYiGWroUtsYzKEhi3GuZXO2ijj3JTcy564q4makilNUyufmjuEaia1p2nazq6RjDf89cnb00aQfl/v6Yzh2XHNwoTJwTaxsVHV0n27rjrc1GChlVKqpC/2571cZzCae1DGu3TVyW+mrTq/wEp0SSCPei2kh1nOxKTW1ZRodDqmoGF6dU2wk2HHwmG8tmL69LjQxUzs53SBkE2FViXf1r7gyIzc4ziTdELPz1vJqHXp4dFzgkC7mXDVtIPx7OP38KHm4lWCdlzr0Z+fs2aWZiudkneTok27EGetAAAAJklEQVQIHWMQ1X+iGsnwTVfeWovhZjajghXDhkWZ7j0M3IHmkmYAhGIIXW1k+4MAAAAASUVORK5CYII=",
+      "order": 8
+    }
+  ],
+  "events": [
+    {
+      "title": "ЧакРа-фест",
+      "date": 1464458400000,
+      "description": "" 
+    },{
+      "title": "Парус мечты",
+      "date": 1466013600000,
+      "description": "Подворье" 
+    },{
+      "title": "Подворье",
+      "date": 1466791200000,
+      "description": "Слёт воскресных школ и православных семей" 
+    },{
+      "title": "День дружбы и единения славян",
+      "date": 1466866800000,
+      "description": "Наречие на Народном" 
+    },{
+      "title": "Санаторий Ёлочка",
+      "date": 1468047600000,
+      "description": "" 
+    }    
+  ]
+}

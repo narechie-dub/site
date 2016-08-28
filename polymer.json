@@ -1,0 +1,16 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/narechie-app.html",
+  "fragments": [
+    "src/about-page.html",
+    "src/contacts-page.html",
+    "src/events-page.html",
+    "src/main-menu.html",
+    "src/music-toolbar.html",
+    "src/narechie-icons.html",
+    "src/page-404.html",
+    "src/songs-page.html",
+    "src/song-page.html",
+    "src/song-card.html"
+  ]
+}

@@ -1,0 +1,82 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-selector/iron-selector.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+
+<dom-module id="main-menu">
+
+  <template>
+
+    <style>
+      :host {
+        display: block;
+        padding: 10px;
+      }
+
+      iron-selector {
+        @apply(--layout-vertical);
+      }
+
+      :host([hidden]) {
+        display: none !important;
+      }
+
+      :host([horizontal]) iron-selector {
+        @apply(--layout-horizontal);
+        background: white;
+      }
+
+      a {
+        padding: 0 16px;
+        line-height: 40px;
+        text-decoration: none;
+        color: var(--app-secondary-color);        
+      }
+
+      a.iron-selected {
+        color: var(--app-primary-color);
+      }
+
+    </style>
+
+    <iron-selector selected="[[selected]]" attr-for-selected="route" role="navigation">
+      <a route="about" href="/about">Группа</a>
+      <a route="songs" href="/songs">Песни</a>
+      <a route="events" href="/events">Концерты</a>
+      <a route="talks" href="/talks">Беседка</a>
+      <a route="contacts" href="/contacts">Контакты</a>
+    </iron-selector>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'main-menu',
+
+      properties: {
+        selected: {
+          type: String
+        },
+        horizontal: {
+          type: Boolean,
+          value: false
+        }
+
+      }
+
+    });
+
+  </script>
+
+</dom-module>

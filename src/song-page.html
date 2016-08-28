@@ -1,0 +1,126 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/app-layout/app-box/app-box.html">
+
+
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+
+<link rel="import" href="../bower_components/paper-fab/paper-fab.html">
+<link rel="import" href="../bower_components/neon-animation/neon-animatable-behavior.html">
+<!-- <link rel="import" href="song-card.html"> -->
+
+
+<link rel="import" href="narechie-icons.html">
+
+
+<dom-module id="song-page">
+
+  <template>
+
+    <style>
+      :host {
+        display: block;
+      }
+
+      paper-material {
+        width: 100%;
+        max-width: 500px;
+        background-color: grey;
+        /*@apply(--layout-vertical);*/
+      }
+      app-box {
+        border: 1px solid green;
+        text-align: center;
+
+      }
+
+    </style>
+
+    <app-box style="height: 500px;" effects="parallax-background">
+      <img background src$="[[_computeCoverUrl(song.coverUrl)]]" alt="cover image" style="width: 100%; max-width:500px">
+      <paper-material elevation="1">
+        <h2>[[song.title]]</h2>
+        <div class="description">[[song.description]]</div>
+      </paper-material>
+    </app-box> 
+
+<!--     <paper-material elevation="1">
+      <iron-image 
+            src$="[[_computeCoverUrl(song.coverUrl)]]"  
+            placeholder="[[song.coverPlaceholder]]" 
+            sizing="cover"
+            width="500"
+            height="500"
+            preload fade></iron-image>
+
+      <div>[[song.title]]</div>
+      
+    </paper-material> -->
+    <!-- <paper-fab icon="play-arrow" on-tap="_play"></paper-fab> -->
+
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'song-page',
+
+      behavior: [
+        'Polymer.NeonAnimatableBehavior'
+      ],      
+
+      properties: {
+        song: {
+          type: Object
+        },
+
+        // animationConfig: {
+        //   type: Object,
+        //   value: () => ({
+        //     'entry': [{
+        //       name: 'fade-in-animation',
+        //       node: this
+        //     }, {
+        //       name: 'hero-animation',
+        //       id: 'hero',
+        //       toPage: this 
+        //     }],
+        //     'exit': [{
+        //       name: 'fade-out-animation',
+        //       node: this
+        //     }]
+        //   })
+        // },
+        // sharedElements: {
+        //   type: Object,
+        //   value: () => ({
+        //     'hero': this
+        //   })
+        // }
+      },
+
+      _play: function(e) {
+        this.fire('song-play', {src: this.song.songUrl, title: this.song.title});
+      },
+      _computeCoverUrl: function(url) {
+        return url.replace('(S)','')
+      }
+
+    });
+
+
+  </script>
+
+</dom-module>

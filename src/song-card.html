@@ -1,0 +1,99 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+
+
+<dom-module id="song-card">
+
+  <template>
+
+    <style>
+      :host {
+        display: block;
+      }
+       .title {
+        display: none;
+      }
+
+      :host([title]) .title {
+        display: block;
+        text-align: center;
+        padding-bottom: 5px;
+      }
+
+ 
+    a {
+        text-decoration: none;
+        color:var(--app-secondary-color);
+      }
+      paper-material {
+        @apply(--layout-horizontal);
+      }
+    
+    </style>
+
+    <paper-material elevation="[[elevation]]">
+      <div>
+        <iron-image 
+              src="[[song.coverUrl]]"  
+              placeholder="[[song.coverPlaceholder]]" 
+              width="[[width]]"
+              height="[[width]]"
+              sizing="cover"
+              preload fade></iron-image>
+        <div class="title"><a href="/song/[[song.id]]">[[song.title]]</a></div>
+      </div>
+      
+      <template is="dom-if" if="[[expanded]]">
+        <div id="playerControls">
+           <div>[[song.title]]</div>
+           <div>Контролы проигрывателя</div>
+        </div>
+      </template>
+
+    </paper-material>
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'song-card',
+
+      properties: {
+        song: {
+          type: Object
+        },
+        width: {
+          type: Number,
+          value: 250
+        },
+        elevation: {
+          type: Number,
+          value: 1          
+        },
+        expanded: {
+          type: Boolean,
+          value: false
+        },
+        title: {
+          type: Boolean,
+          value: false
+        }
+      }
+
+    });
+
+  </script>
+
+</dom-module>

@@ -1,0 +1,213 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/app-route/app-location.html">
+<link rel="import" href="../bower_components/app-route/app-route.html">
+<link rel="import" href="../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+<link rel="import" href="../bower_components/app-layout/app-drawer/app-drawer.html">
+<link rel="import" href="../bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+<link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="../bower_components/iron-selector/iron-selector.html">
+
+<link rel="import" href="../bower_components/neon-animation/neon-animated-pages.html">
+<link rel="import" href="../bower_components/neon-animation/animations/fade-in-animation.html">
+<link rel="import" href="../bower_components/neon-animation/animations/fade-out-animation.html">
+
+<link rel="import" href="narechie-icons.html">
+<link rel="import" href="about-page.html">
+<link rel="import" href="songs-page.html">
+<link rel="import" href="song-page.html">
+<link rel="import" href="events-page.html">
+<link rel="import" href="contacts-page.html">
+<!-- <link rel="import" href="mediateka-page.html"> -->
+<!-- <link rel="import" href="project-page.html"> -->
+<link rel="import" href="page-404.html">
+<link rel="import" href="main-menu.html">
+<link rel="import" href="music-toolbar.html">
+
+<dom-module id="narechie-app">
+
+  <template>
+
+    <style>
+
+      :host {
+        display: block;
+        --app-primary-color: #4285f4;
+        --app-secondary-color: black;
+      }
+
+      app-header {
+        background-color: var(--app-primary-color);
+        color: #fff;
+      }
+      app-header paper-icon-button {
+        --paper-icon-button-ink-color: white;
+      }
+
+      .drawer-toolbar {
+        height: auto;
+        /*background-color: var(--app-primary-color);*/
+      }
+      .drawer-toolbar img {
+        margin: 0 auto;
+        padding-top: 15px;
+      }
+
+      music-toolbar {
+        width: 100%;
+        overflow-x: auto;
+      }
+
+    </style>
+
+    <app-location route="{{route}}"></app-location>
+    <app-route
+        route="{{route}}"
+        pattern="/:page"
+        data="{{routeData}}"
+        tail="{{subroute}}"></app-route>
+    <app-route
+        route="{{route}}"
+        pattern="/song/:song" 
+        data="{{songData}}"
+        tail="{{songRoute}}"></app-route>
+
+    <iron-ajax
+        auto
+        url="../data/data.json"
+        handle-as="json"
+        on-response="_dataResponse"
+        last-response="{{data}}"></iron-ajax>
+    
+    <app-drawer-layout fullbleed force-narrow>
+      <!-- Drawer -->
+      <app-drawer id="drawer" swipe-open>
+        <app-toolbar class="drawer-toolbar">
+          <img src="/images/narechie_logo_200.png"></img>
+        </app-toolbar>
+          <main-menu selected="[[page]]"></main-menu>
+      </app-drawer>
+
+      <!-- Основной контент -->
+      <app-header-layout has-scrolling-region>
+
+        <app-header condenses reveals effects="waterfall">
+          <app-toolbar>
+            <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
+            <div main-title>[[title]]</div>
+            <span class="flex"></span>
+            <paper-icon-button icon="library-music" toggles active="{{_musicOpened}}" ></paper-icon-button>
+          </app-toolbar>
+          <music-toolbar songs="[[data.songs]]" bottom-item hidden$="[[!_musicOpened]]"></music-toolbar>
+        </app-header>
+
+        <neon-animated-pages role="main"
+                selected="[[page]]"
+                attr-for-selected="page"
+                fallback-selection="404"
+                entry-animation="fade-in-animation"
+                exit-animation="fade-out-animation">
+          <about-page page="about"></about-page>
+          <songs-page page="songs" songs="[[data.songs]]"></songs-page>
+          <song-page page="song" song="[[_computeSong(data.songs, songData.song)]]"></song-page>
+          <events-page page="events" events="[[data.events]]"></events-page>
+          <contacts-page page="contacts"></contacts-page>
+          <!-- <mediateka-page page="media"></mediateka-page> -->
+           <!--<project-page page="project"></project-page>   -->
+          <page-404 page="404"></page-404>
+        </neon-animated-pages>
+
+      </app-header-layout>
+
+    </app-drawer-layout>
+
+  </template>
+
+  <script>
+
+
+    Polymer({
+
+      is: 'narechie-app',
+
+      properties: {
+
+        page: {
+          type: String,
+          reflectToAttribute: true,
+          observer: '_pageChanged',
+          notify: true
+        },
+        title: {
+          type: String,
+          value: 'Наречие'
+        },
+        data: {
+          type: Object,
+          notify: true
+        }
+      },
+
+      observers: [
+        '_routePageChanged(routeData.page)'
+      ],
+
+      listeners: {
+        // 'song-play': '_onSongPlay',
+        // 'song-stop': '_onSongStop'
+      },
+
+      _routePageChanged: function(page) {
+        const drawer = this.$.drawer;
+        if (drawer.opened) {drawer.close()};
+        this.page = page.toLowerCase() || 'songs';
+      },
+
+      _pageChanged: function(newPage) {
+        this._updateTitle(newPage);
+      },
+
+      _dataResponse: function() {
+        this._updateTitle(this.page)
+      },
+
+      _updateTitle: function(url) {
+        if (this.data) {
+          for (var page of this.data.pages) {
+            if (page.url === url) {
+              this.title = page.title;
+              document.title = 'группа "Наречие" - ' + page.title;
+              break;
+            } else {
+              this.title = 'Наречие';
+              document.title = 'группа "Наречие"';
+            }
+          }
+        } else {
+          this.title = 'Наречие';
+          document.title = 'группа "Наречие"';
+        }
+      },
+
+      _computeSong: function(songs, idSong) {
+        var result = {
+          title: 'Такая песня не найдена',
+          coverURL: '/images/404.png'
+        };
+
+        for (let song of songs) {
+          if (song.id === decodeURI(idSong.toLowerCase())) {
+            result = song;
+            // this.title = song.title;
+          }
+        };
+        return result;
+      }
+    });
+
+  </script>
+
+</dom-module>
