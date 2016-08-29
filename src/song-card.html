@@ -31,13 +31,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         padding-bottom: 5px;
       }
 
- 
-    a {
+      a {
         text-decoration: none;
         color:var(--app-secondary-color);
       }
+      
       paper-material {
         @apply(--layout-horizontal);
+      }
+
+      #playerControls {
+        padding: 10px;
       }
     
     </style>
@@ -50,14 +54,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               width="[[width]]"
               height="[[width]]"
               sizing="cover"
-              preload fade></iron-image>
+              preload fade
+              on-tap="_onTapImage"></iron-image>
         <div class="title"><a href="/song/[[song.id]]">[[song.title]]</a></div>
       </div>
       
       <template is="dom-if" if="[[expanded]]">
         <div id="playerControls">
            <div>[[song.title]]</div>
-           <div>Контролы проигрывателя</div>
+           <div>Контролы проигрывателя</div> 
         </div>
       </template>
 
@@ -84,12 +89,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         },
         expanded: {
           type: Boolean,
-          value: false
+          value: false,
+          observer: '_expandedChanged'
         },
         title: {
           type: Boolean,
           value: false
         }
+      },
+
+      _expandedChanged: function() {
+        if (this.expanded) {
+          this.style.minWidth = isNaN(this.width) ? (this.width * 3) : (3 * this.width) + 'px';
+        } else {
+          this.style.minWidth = isNaN(this.width) ? this.width : this.width + 'px';          
+        }
+      },
+
+      _onTapImage: function() {
+        this.expanded = !this.expanded
       }
 
     });
