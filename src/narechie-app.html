@@ -161,7 +161,7 @@
       },
 
       _routePageChanged: function(page) {
-        const drawer = this.$.drawer;
+        let drawer = this.$.drawer;
         if (drawer.opened) {drawer.close()};
         this.page = page.toLowerCase() || 'songs';
       },
@@ -193,7 +193,7 @@
       },
 
       _computeSong: function(songs, idSong) {
-        var result = {
+        let result = {
           title: 'Такая песня не найдена',
           coverURL: '/images/404.png'
         };
