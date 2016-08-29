@@ -1,7 +1,7 @@
 {
-  "name": "polymer-starter-kit",
+  "name": "narechie-app",
   "authors": [
-    "The Polymer Authors"
+    "Narechie dub"
   ],
   "private": true,
   "dependencies": {

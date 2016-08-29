@@ -9,6 +9,7 @@
     "src/music-toolbar.html",
     "src/narechie-icons.html",
     "src/page-404.html",
+    "src/shared-styles.html",
     "src/songs-page.html",
     "src/song-page.html",
     "src/song-card.html"
