@@ -13,5 +13,16 @@
     "src/songs-page.html",
     "src/song-page.html",
     "src/song-card.html"
+  ],
+  "includeDependencies": [
+    "bower_components/webcomponentsjs/webcomponents-lite.min.js",
+    "manifest.json",
+    "bower.json"
+  ],
+  "sourceGlobs": [
+    "src/**/*",
+    "images/**/*",
+    "data/**/*",
+    "media/**/*"    
   ]
 }
