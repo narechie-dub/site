@@ -1,17 +1,21 @@
 {
-  "name": "polymer-starter-kit-custom-build",
+  "name": "narechie-dub-app",
   "version": "0.0.0",
-  "description": "A starting point for Polymer 1.0 custom build apps",
+  "description": "Веб-приложение сайта https://narechie-dub.ru/ основано на polymer starter kit custom build",
   "repository": {
     "type": "git",
-    "url": "git@github.com:PolymerElements/generator-polymer-init-custom-build"
+    "url": "git@github.com:narechie-dub/site"
   },
-  "license": "http://polymer.github.io/LICENSE.txt",
+  "license": "https://raw.githubusercontent.com/narechie-dub/site/master/LICENSE",
   "bugs": {
-    "url": "https://github.com/PolymerElements/generator-polymer-init-custom-build/issues"
+    "url": "https://github.com/narechie-dub/site/issues"
   },
   "engines": {
     "node": ">=4.0"
+  },
+  "scripts": {
+    "start": "polymer serve --port 3000",
+    "test": "polymer test"
   },
   "private": true,
   "devDependencies": {
