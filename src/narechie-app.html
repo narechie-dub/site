@@ -26,6 +26,8 @@
 <link rel="import" href="page-404.html">
 <link rel="import" href="main-menu.html">
 <link rel="import" href="music-toolbar.html">
+<link rel="import" href="audio-player.html">
+
 
 <dom-module id="narechie-app">
 
@@ -82,6 +84,8 @@
         on-response="_dataResponse"
         last-response="{{data}}"></iron-ajax>
     
+    <audio-player id="player"></audio-player>
+    
     <app-drawer-layout fullbleed force-narrow>
       <!-- Drawer -->
       <app-drawer id="drawer" swipe-open>
@@ -100,6 +104,7 @@
             <div main-title>[[title]]</div>
             <span class="flex"></span>
             <paper-icon-button icon="library-music" toggles active="{{_musicOpened}}" ></paper-icon-button>
+            <paper-icon-button icon="pause" on-tap="_onTapStop"></paper-icon-button>
           </app-toolbar>
           <music-toolbar songs="[[data.songs]]" bottom-item hidden$="[[!_musicOpened]]"></music-toolbar>
         </app-header>
@@ -156,9 +161,24 @@
       ],
 
       listeners: {
-        // 'song-play': '_onSongPlay',
-        // 'song-stop': '_onSongStop'
+        'audio-play': '_onAudioPlay',
+        'audio-stop': '_onAudioStop'
       },
+
+      _onAudioPlay: function(e) {
+        console.log(e.detail);
+        this.$.player.src = e.detail.songUrl;
+      },
+
+      _onAudioStop: function(e) {
+        this.$.player.stop();
+      },
+
+      _onTapStop: function(e) {
+        this.fire('audio-stop');
+
+      },
+      
 
       _routePageChanged: function(page) {
         let drawer = this.$.drawer;

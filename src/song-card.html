@@ -11,6 +11,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-image/iron-image.html">
 <link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/paper-fab/paper-fab.html">
+<link rel="import" href="narechie-icons.html">
+
 
 
 <dom-module id="song-card">
@@ -62,6 +65,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <template is="dom-if" if="[[expanded]]">
         <div id="playerControls">
            <div>[[song.title]]</div>
+           
+           <paper-fab icon="play-arrow" on-tap="_onTapFAB"></paper-fab>
+           
            <div>Контролы проигрывателя</div> 
         </div>
       </template>
@@ -95,6 +101,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         title: {
           type: Boolean,
           value: false
+        },
+        played: {
+          type: Boolean,
+          value: false
         }
       },
 
@@ -108,6 +118,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       _onTapImage: function() {
         this.expanded = !this.expanded
+      },
+
+      _onTapFAB: function() {
+        if (!this.played) {
+          this.fire('audio-play', {songUrl: this.song.songUrl, songTitle: this.song.title})
+        } 
       }
 
     });
